@@ -1,10 +1,11 @@
-@Library("shared-library")
+// @Library("shared-library")
 pipeline {
   agent { label "macos" }
   stages {
     stage("Example"){
       steps {
-        helloWorld()
+        // helloWorld()
+        sh "echo Hello World"
       }
     }
   }
